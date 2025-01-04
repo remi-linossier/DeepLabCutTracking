@@ -9,7 +9,7 @@ function mirror_all_videos(input_folder, output_folder)
     end
 
     % videos listing
-    video_files = dir(fullfile(input_folder, '*.mp4')); % Changez l'extension si nécessaire
+    video_files = dir(fullfile(input_folder, '*.mp4')); 
 
     for k = 1:length(video_files)
         input_path = fullfile(input_folder, video_files(k).name);
@@ -28,7 +28,7 @@ function mirror_video(input_path, output_path)
     
     % VideoWriter object
     video_writer = VideoWriter(output_path, 'MPEG-4');
-    video_writer.FrameRate = video_reader.FrameRate; % Assurez-vous que le frame rate est le même
+    video_writer.FrameRate = video_reader.FrameRate; 
     open(video_writer);
 
     while hasFrame(video_reader)
