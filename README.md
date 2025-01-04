@@ -4,4 +4,7 @@ I took over a part of the work of Linda Mecherout (https://github.com/lindameche
 
 # Folders organisation 
 
-- aedf
+- 3dPrinting : 3D model of the fake bee used for the project (printed in 13mm long and 6mm wide.
+- Error : MatLab script used to calculate the position error between experimental and theoretical trajectory.
+- Figures : MatLab scripts used to get coodrinates of points on a video or a frame and to create a graph with the theoretical and experimental trajectory.
+- ImageProcessing : MatLab script used to make the raw videos usable for training the neural network 
